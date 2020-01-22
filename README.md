@@ -10,4 +10,6 @@ May god bless human, without boundary of countries, race and belief.
 The news and statics figure are collected from local (P.R. China) and global media. The author tries to keep his objective and give no hint of which clue from which data source is more/less accurate. 
 
 ## Claim
-The author is not guaranteed about the accuracy of the numbers, figures, data sources, analysis methods and other belongings. All the information is open for public and toolchain is open source. The project is not a place for political argument and debating, all the viewers and contributors are welcomed for professional discussion. 
+The author is not guaranteed about the accuracy of the numbers, figures, data sources, analysis methods and other belongings. All the information is open for public and toolchain is open source. 
+
+The project is not a place for political argument and debating, all the viewers and contributors are welcomed for professional discussion. 
