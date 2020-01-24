@@ -1,5 +1,6 @@
 # self-defined
 test/
+data/DXYjson/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

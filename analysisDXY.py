@@ -15,6 +15,8 @@ import os
 import json
 import datetime
 import pandas as pd
+import numpy as np
+import time
 
 import sys
 sys.path.append("..") #goes to upper directory
@@ -49,9 +51,11 @@ def update_df (df, dict_stru):
         [total_comfirmed, new_confirmed, modified_timestamp, time_difference]
     """
     df_last_col = df.columns[-1]
-    curr_ts_str = utc2str()
+    curr_ts_str = utc2str(time.gmtime())
     df[curr_ts_str] = None
     df_curr_col = df.columns[-1]
+    #print(df_last_col, df_curr_col)
+    #print(df)
     old_total_confirm = str2list(df.loc[0, [df_last_col]].values[0])[0]
     old_total_ts = str2list(df.loc[0, [df_last_col]].values[0])[2]
     new_total_confirm = 0
@@ -59,8 +63,9 @@ def update_df (df, dict_stru):
     for dict_i in dict_stru:
         dict_i_id = int(dict_i["provinceId"])
         if dict_i_id in CHN_PROV_CODE:
-            if df.loc[dict_i_id,[df_last_col]].values: #if former column has value
+            if df.loc[dict_i_id,[df_last_col]].values or df.loc[dict_i_id,[df_last_col]].values[0] is not np.nan: #if former column has value
                 old_data_list_str = df.loc[dict_i_id, [df_last_col]].values[0]
+                #print(dict_i_id, old_data_list_str)
                 old_data_list = str2list(old_data_list_str)
                 old_confirmed = old_data_list[0]
                 old_ts = old_data_list[2]
@@ -100,4 +105,4 @@ if __name__ == '__main__':
     DXY_df = read_csvasdf()
     DXY_rt_dict = read_json()
     DXY_df_update = update_df(DXY_df, DXY_rt_dict)
-    save_df2csv(DXY_df_update)
+    #save_df2csv(DXY_df_update)

@@ -104,7 +104,7 @@ if __name__ == '__main__':
             print(DXY_df_update.loc[:,[DXY_df_update.columns[0], DXY_df_update.columns[-1]]])
             #save df as csv
             save_df2csv(DXY_df_update)
-            time.sleep(60*60) #20min
+            time.sleep(30*60) #20min
         except requests.exceptions.ConnectionError:
             #print("[error] cannot connect url: {} - {}".format(URL_DX,str(datetime.datetime.now())))
             logger.info("[error] cannot connect url: {} - {}".format(URL_DX,str(datetime.datetime.now())))
