@@ -244,9 +244,12 @@ CHN = {
     33 : "ZHEJIANG",
     
     # === CITY/PROVINCE misc ===
-    71 : "TAIWAN",
-    81 : "HONGKONG",
-    82 : "MACAO",
+#    71 : "TAIWAN",
+#    81 : "HONGKONG",
+#    82 : "MACAO",
+    66 : "HONGKONG",
+    67 : "MACAO",
+    68 : "TAIWAN",
 
 } # P.R. CHINA - mainland
 
