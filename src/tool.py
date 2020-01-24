@@ -20,5 +20,5 @@ def str2list(listinstr="[]", split_sign=","):
     """
     new_str = listinstr.replace("[","").replace("]","").replace(" ","")
     new_str_list = new_str.split(split_sign)
-    new_str_list = [int(list_i) for list_i in new_str_list]
+    new_str_list = [int(float(list_i)) for list_i in new_str_list]
     return new_str_list

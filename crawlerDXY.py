@@ -65,7 +65,7 @@ def main():
         DX_utc_str = DX_utc_str.split("_")[0]+"_0"+DX_utc_str.split("_")[1] #consider the case of hour value less than 10, 2-digit
     
     # file saving per hour
-    with open(os.getcwd()+r"\data\json\DXY_"+DX_utc_str+".json",'w',encoding='utf-8') as f:
+    with open(os.getcwd()+r"\data\DXYjson\DXY_"+DX_utc_str+".json",'w',encoding='utf-8') as f:
         f.write(DX_content_listByCountry.replace(",",",\n"))
         #print("[done] file - {} saved.".format("DXY_"+DX_utc_str+".json"))
         logger.info("[done] file - {} saved.".format("DXY_"+DX_utc_str+".json"))

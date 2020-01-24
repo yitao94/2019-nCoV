@@ -22,7 +22,7 @@ from src.tool import utc2str, str2list
 from src.CHN_prov import CHN_PROV_CODE, CHN_PROV_NAME
 
 
-DXY_realtime_json_addr_test = r"C:\Users\YITAJIN\RD\Project\2019-nCoV\data\json\DXY_20200124_012708.json" 
+DXY_realtime_json_addr_test = r"C:\Users\YITAJIN\RD\Project\2019-nCoV\data\DXYjson\DXY_20200124_012708.json" 
 
 #read current dataframe
 DXY_df_addr = os.getcwd()+r"\data\DXY_RT.csv"
@@ -33,6 +33,10 @@ def read_csvasdf (csv_addr = DXY_df_addr):
     return df
 
 def read_json (json_addr=DXY_realtime_json_addr_test):
+    """
+    note:
+        difference between json.read() and json.read()
+    """
     with open(json_addr, 'r', encoding="utf-8") as f:
         json_dict = json.load(f)
     return json_dict
@@ -83,7 +87,7 @@ def update_df (df, dict_stru):
     return df
         
         
-def save_df2csv(df, csv_fileaddr="DXY_RT.csv", indexLabel="PROV_CODE" ):
+def save_df2csv(df, csv_fileaddr=DXY_df_addr, indexLabel="PROV_CODE" ):
     df.to_csv(csv_fileaddr, index_label=indexLabel) #index_label
 
 
