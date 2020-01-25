@@ -63,7 +63,7 @@ def update_df (df, dict_stru):
     for dict_i in dict_stru:
         dict_i_id = int(dict_i["provinceId"])
         if dict_i_id in CHN_PROV_CODE:
-            if df.loc[dict_i_id,[df_last_col]].values or df.loc[dict_i_id,[df_last_col]].values[0] is not np.nan: #if former column has value
+            if df.loc[dict_i_id,[df_last_col]].values and (df.loc[dict_i_id,[df_last_col]].values[0] is not np.nan): #if former column has value
                 old_data_list_str = df.loc[dict_i_id, [df_last_col]].values[0]
                 #print(dict_i_id, old_data_list_str)
                 old_data_list = str2list(old_data_list_str)

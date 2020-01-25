@@ -1,8 +1,8 @@
 # self-defined
 test/
 data/DXYjson/
-arc/
-*.json
+arc/*.json
+news/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
