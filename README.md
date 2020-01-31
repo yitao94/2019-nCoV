@@ -4,12 +4,12 @@ This goal of this project is to collect information and analyse trend of statist
 The original code source is on github project [2019-nCoV](https://github.com/yitao94/2019-nCoV) with [MIT license](https://github.com/yitao94/2019-nCoV/blob/master/LICENSE).
 
 ## Aboutme
-The author is a vitness and survivor from 2003 SARScov in Beijing City at period of his elementary school. From his memory, one of mistakes from that disaster is the so-called "concealed declaration of infected and death case" from government, which raised quite a lot panic to the public. He hopes government and related department can draw lesson from that eqidemic history, and use more professional, strict, powerful attitude from the very beginning of today's affair. 
+The author is a vitness and survivor from [2003-SARScov](https://www.who.int/csr/sars/en/) in Beijing City, P.R. China at period of his elementary school. From his limited memory, one of mistakes from that disaster is the so-called "concealed declaration of infected and death case" from government, which raised quite a lot panic to the public. He hopes government and related departments can draw lesson from that eqidemic history, and use more professional, strict, powerful attitude from the very beginning of today's affair. 
 
-May god bless human, without boundary of countries, race and belief.
+May god bless human, without boundary of countries, races and beliefs.
 
 ## Note
-The news and statics figure are collected from local (P.R. China) and global media. The author tries to keep his objective and give no hint of which clue from which data source is more/less accurate. 
+The news and statistics figure are collected from local (P.R. China) and global media. The author tries to keep his objective and give no hint of which clue from which data source is more/less accurate. 
 
 > Eliminating rumor and ignorance panic shares same importance of clarifing open information in time 
 
@@ -18,13 +18,13 @@ The news and statics figure are collected from local (P.R. China) and global med
 + Municipal Health Commission of different provinces
 
 ### 3<sup>rd</sup> data and toolchain source
-Many thanks to the data compilation and visulization of platform - [Dingxiangyisheng@Dingxiangyuan](https://3g.dxy.cn/newh5/view/pneumonia) and its corresponding linked project on github, such as: 
+Many thanks to the data compilation and visulization of platform - [DXY](https://3g.dxy.cn/newh5/view/pneumonia) and its corresponding linked project on github, such as: 
 + [DXY-2019-nCoV-Crawler](https://github.com/BlankerL/DXY-2019-nCoV-Crawler/blob/master/crawler.py)
 + etc. 
   
-the crawler script can run smoothly. 
+the crawler script in this project can run smoothly. 
 
 ## Claim
-The author is not guaranteed about the accuracy of the numbers, figures, data sources, analysis methods and other belongings. All the information is open for public and toolchain is open source. 
+The author cannot guarantee about the accuracy of the numbers, figures, data sources, analysis methods and other belongings. All the information is open for public and toolchain is open source. 
 
-The project is not a place for political argument and debating, all the viewers and contributors are welcomed for professional discussion. 
+The project is not a place for political argument and debating, all the viewers, starers and contributors are welcomed here for professional discussion. 

@@ -101,7 +101,8 @@ if __name__ == '__main__':
             DXY_rt_content, DXY_rt_dict = main()
             #update df
             DXY_df_update = update_df(DXY_df, DXY_rt_dict)
-            print(DXY_df_update.loc[:,[DXY_df_update.columns[0], DXY_df_update.columns[-1]]])
+            #print(DXY_df_update.loc[:,[DXY_df_update.columns[0], DXY_df_update.columns[-1]]])
+            print(DXY_df_update.loc[[0, 11, 32, 42], [DXY_df_update.columns[0], DXY_df_update.columns[-1]]]) #China, Beijing, Jiangsu, Hubei
             #save df as csv
             save_df2csv(DXY_df_update)
             time.sleep(30*60) #20min

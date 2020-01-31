@@ -3,6 +3,7 @@ test/
 data/DXYjson/
 arc/*.json
 news/
+paper/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

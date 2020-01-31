@@ -20,8 +20,17 @@ def str2list(listinstr="[]", split_sign=","):
         convert str to list
         e.g.:
             "[0, 2]" -> list([0,2])
+    update:
+        consider None in the string
     """
-    new_str = listinstr.replace("[","").replace("]","").replace(" ","")
-    new_str_list = new_str.split(split_sign)
-    new_str_list = [int(float(list_i)) for list_i in new_str_list]
+    old_str = listinstr.replace("[","").replace("]","").replace(" ","")
+    old_str_list = old_str.split(split_sign)
+    new_str_list = []
+    for list_i in old_str_list:
+        if list_i == "None":
+            new_str_list.append(None)
+        else:
+            new_str_list.append(int(float(list_i)))
+        
+    #new_str_list = [int(float(list_i)) for list_i in new_str_list]
     return new_str_list
