@@ -109,6 +109,9 @@ def update_df (df, dict_stru):
                 curr_ts = dict_i["modifyTime"]/1000
                 update_data_list = [curr_confirmed, 0, curr_ts, 0]
             df.loc[dict_i_id, [df_curr_col]] = [update_data_list]
+        elif dict_i_id == 999:
+            if dict_i["confirmedCount"]!=0 or dict_i["suspectedCount"]!=0 or dict_i["deadCount"]!=0 or dict_i["curedCount"]!=0:
+                print("[warning] un-determined area in China, total confirmed: {}, total suspected: {}, total dead: {}, total cured: {}".format(dict_i["confirmedCount"],dict_i["suspectedCount"],dict_i["deadCount"],dict_i["curedCount"] ))
         else:
             print("[error] prov_code: {} is not in CHN_PROV_CODE".format(dict_i_id))
     curr_total_diff = int((datetime.datetime.utcfromtimestamp(new_total_ts)-datetime.datetime.utcfromtimestamp(old_total_ts)).seconds/60/60)
